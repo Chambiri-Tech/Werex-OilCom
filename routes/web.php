@@ -7,7 +7,8 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail; // For sending emails
 use App\Http\Controllers\OTPController;
-
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\ResetPasswordController;
 
 // --------------------
 // Public Routes
@@ -199,6 +200,19 @@ Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 
 // Handle login
 Route::post('/login', [AuthController::class, 'login']);
+
+// Password Reset Routes
+Route::get('/forgot-password', [ForgotPasswordController::class, 'showLinkRequestForm'])
+    ->name('password.request');
+
+Route::post('/forgot-password', [ForgotPasswordController::class, 'sendResetLinkEmail'])
+    ->name('password.email');
+
+Route::get('/reset-password/{token}', [ResetPasswordController::class, 'showResetForm'])
+    ->name('password.reset');
+
+Route::post('/reset-password', [ResetPasswordController::class, 'reset'])
+    ->name('password.update');
 
 // Handle logout
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

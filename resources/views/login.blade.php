@@ -209,7 +209,7 @@ footer {
             </form>
             <div class="login-footer">
                 <p>Don't have an account? <a href="{{ route('register') }}">Register Here</a></p>
-                <p><a href="#">Forgot Password?</a></p>
+                <a href="{{ route('password.request') }}">Forgot Password?</a>
             </div>
         </div>
     </div>
