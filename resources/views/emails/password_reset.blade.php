@@ -15,7 +15,7 @@
                     <!-- Logo only at the top -->
                     <tr>
                         <td align="center" style="padding:30px 0 10px 0;">
-                            <img src="https://i.imgur.com/your-logo.png" alt="Werex OilCom Logo" width="120">
+                            <img src="https://i.ibb.co/wNn9h1Fx/ff2f7f17-427a-4ce7-8c03-ca7f7f774996.png" alt="Werexoil" style="display: block; max-width: 200px; height: auto;">
                         </td>
                     </tr>
 
@@ -58,8 +58,8 @@
                     <tr>
                         <td align="center" style="background:#f8f9fa; padding:15px;">
                             <p style="font-size:12px; color:#777; margin:0;">
-                                &copy; {{ date('Y') }} <strong>Werex OilCom</strong> — Mafuta ya Kupikia Majumbani<br>
-                                All rights reserved.
+                                &copy; {{ date('Y') }} <strong>Werex OilCom</strong>. All rights reserved<br>
+                                Powering Progress Through Innovation.
                             </p>
                         </td>
                     </tr>

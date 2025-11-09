@@ -110,9 +110,9 @@
     <div class="email-container">
         <div class="header">
             {{-- Werex logo --}}
-            <img src="{{ asset('images/logo.png') }}" alt="Werex Logo">
+            <img src="https://i.ibb.co/wNn9h1Fx/ff2f7f17-427a-4ce7-8c03-ca7f7f774996.png" alt="Werexoil" style="display: block; max-width: 200px; height: auto;">
             <div class="brand-title">WEREX OILCOM</div>
-            <div class="tagline">Premium Energy Solutions</div>
+            <div class="tagline">The People's Choice</div>
         </div>
 
         <p style="color: #333; line-height: 1.6;">Hello <strong style="color: #0066cc;">{{ $user->name }}</strong>,</p>
